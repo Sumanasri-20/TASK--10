@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <body>
+    <form action="./loginpage.html" method="post">
+      <label for="username">USERNAME</label>
+      <input type="text" name="name" id="username" required />
+      <br />
+      <label for="Cpassword"> Create password</label>
+      <input
+        type="password"
+        name="Cpassword"
+        id="Cpassword"
+        required
+        pattern="[a-zA-Z0-9@!$#./]{8,16}"
+        title="please enter characters b/w 8 to 16 and must have one big alphabet,special symbol,number"
+      />
+      <br />
+      <label for="npassword"> Confirm password</label>
+      <input
+        type="password"
+        name="npassword"
+        id="npassword"
+        required
+        pattern="[a-zA-Z0-9@!$#./]{8,16}"
+        title="please enter characters b/w 8 to 16 and must have one big alphabet,special symbol,number"
+      />
+      <br />
+      <input type="submit" value="loginregister" />
+    </form>
+  </body>
+</html>
